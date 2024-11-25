@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Allura&family=Merienda:wght@300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Merienda:wght@300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yatra+One&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  color: #fff;
-  font-family: cursive;
+  font-family: "Poppins", cursive;
 }
 
 body {
@@ -63,6 +63,7 @@ header nav ul {
 }
 
 header nav ul li a {
+  color: #fff;
   transition: all .3s;
 }
 
@@ -83,4 +84,88 @@ header ul li a:hover {
 
 header ul li a:hover::after {
   transform: scaleX(1);
+}
+
+.halaman {
+  display: flex;
+  padding-left: 5rem;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+main #ucapan {
+  padding-top: 5rem;
+}
+
+main .ucapan {
+  width: 65%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40px;
+}
+
+main .ucapan img {
+  width: 200px;
+}
+
+main .ucapan .kata-ucapan{
+  text-align: left;
+  position: relative;
+}
+
+main .ucapan h1,
+main #sejarah h1,
+main #pesan-natal h1 {
+  font-family: "Yatra One", system-ui;
+  text-transform: capitalize;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  color: rgb(176,0,0);
+}
+
+main .ucapan p {
+  color: rgb(57,1,5);
+  font-weight: 500;
+}
+
+main #sejarah,
+main #pesan-natal {
+  padding-top: 5rem;
+  width: 650px;
+}
+
+main #sejarah p,
+main #pesan-natal p {
+  text-align: justify;
+  color: rgb(57,1,5);
+}
+
+main #sejarah img,
+main #pesan-natal img {
+  width: 650px;
+  height: 250px;
+  object-fit: cover;
+}
+
+main #pesan-natal {
+  padding-top: 5rem;
+}
+
+aside {
+  margin-top: 11rem;
+  margin-right: 1rem;
+  text-align: center;
+}
+
+aside img {
+  width: 350px;
+}
+
+main .halaman aside p {
+  color: rgb(176,0,0);
+  font-weight: 500;
+  text-align: center;
 }
